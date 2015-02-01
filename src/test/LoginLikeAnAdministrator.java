@@ -1,10 +1,17 @@
 package test;
-
+/**Created by Jose Cabrera
+ * 1/28/15
+ * 
+ */
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
-
+/**
+ * @title  LoginLikeAnAdministrator
+ * @author Jose Cabrera
+ * @description Is the page that contains information about Test that verify the login successfully
+ */
 public class LoginLikeAnAdministrator {
 
 	public LoginPage loginPage = new LoginPage();

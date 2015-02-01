@@ -7,11 +7,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.navigation.NavigationPage;
 import utils.Randoms;
-
 /**
- * @title  CreateNewProgram
+ * @title  SeeApplicants
  * @author Jose Cabrera
- * @description 	
+ * @description Is the page that contains information about 
+ * Test that verify if a Program is created correctly
  */
 public class VerifyCreateNewProgram {
 

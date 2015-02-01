@@ -7,7 +7,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.navigation.NavigationPage;
 import utils.Randoms;
-
+/**
+ * @title  SeeApplicants
+ * @author Jose Cabrera
+ * @description Is the page that contains information about 
+ * Test that verify if the Applicants page contain the applicants in the table correctly
+ */
 public class SeeApplicants {
 
 	public NavigationPage navigationPage=new NavigationPage();

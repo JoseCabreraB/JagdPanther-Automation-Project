@@ -13,7 +13,12 @@ import org.testng.annotations.Test;
 import database.DataConnection;
 import pages.navigation.NavigationPage;
 import utils.ReadExcel;
-
+/**
+ * @title  SeeApplicants
+ * @author Jose Cabrera
+ * @description Is the page that contains information about 
+ * Test that verify if a Stage is created correctly
+ */
 public class VerifyCreateNewStage {
 	
 	public NavigationPage navigationPage=new NavigationPage();

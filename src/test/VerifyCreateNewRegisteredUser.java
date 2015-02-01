@@ -8,7 +8,12 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.navigation.NavigationPage;
-
+/**
+ * @title  SeeApplicants
+ * @author Jose Cabrera
+ * @description Is the page that contains information about 
+ * Test that verify if a Registered Users are created correctly
+ */
 public class VerifyCreateNewRegisteredUser {
 
 	public NavigationPage navigationPage=new NavigationPage();
@@ -27,5 +32,4 @@ public class VerifyCreateNewRegisteredUser {
 			.clickAddNewRegisteredUserlink()
 			.create(ci,name,lastname,email).isNameinTable(name));
 	}
-	
 }
