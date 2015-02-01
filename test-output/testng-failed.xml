@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [JagdPantherSuit]">
+  <test name="Acceptance(failed)">
+    <classes>
+      <class name="test.JagdPantherSuite">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- test.JagdPantherSuite -->
+      <class name="test.VerifyCreateNewRegisteredUser">
+        <methods>
+          <include name="testVerifyNewRegisteredUserCreated" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.VerifyCreateNewRegisteredUser -->
+    </classes>
+  </test> <!-- Acceptance(failed) -->
+</suite> <!-- Failed suite [JagdPantherSuit] -->
