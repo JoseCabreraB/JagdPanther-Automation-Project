@@ -1,16 +1,8 @@
-/*
- *
- */
-
-package webdriver;
-
-
+package framework.webdriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
-
-
 /**
  * Manages the web browser
  */

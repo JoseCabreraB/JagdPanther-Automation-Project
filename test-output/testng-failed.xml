@@ -9,11 +9,11 @@
           <include name="init"/>
         </methods>
       </class> <!-- test.JagdPantherSuite -->
-      <class name="test.VerifyCreateNewRegisteredUser">
+      <class name="test.VerifyCreateNewStage">
         <methods>
-          <include name="testVerifyNewRegisteredUserCreated" invocation-numbers="0"/>
+          <include name="testVerifyNewStageCreated" invocation-numbers="2"/>
         </methods>
-      </class> <!-- test.VerifyCreateNewRegisteredUser -->
+      </class> <!-- test.VerifyCreateNewStage -->
     </classes>
   </test> <!-- Acceptance(failed) -->
 </suite> <!-- Failed suite [JagdPantherSuit] -->

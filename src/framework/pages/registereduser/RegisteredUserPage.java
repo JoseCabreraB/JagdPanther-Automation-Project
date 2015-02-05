@@ -1,4 +1,5 @@
-package pages.RegisteredUser;
+package framework.pages.registereduser;
+
 /**Created by Jose Cabrera
  * 1/28/15
  * 
@@ -8,7 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import webdriver.SeleniumDriverManager;
+import framework.webdriver.SeleniumDriverManager;
+
 /**
  * @title  RegisteredUserPage
  * @author Jose Cabrera
@@ -16,23 +18,28 @@ import webdriver.SeleniumDriverManager;
  */
 public class RegisteredUserPage {
 	WebDriver driver;
-	@FindBy(id="j_id_t:j_id_16")
+
+	@FindBy(id = "j_id_t:j_id_16")
 	WebElement createRegisteredUser;
-	@FindBy(id="j_id_t:AllUserTable_data")
+
+	@FindBy(id = "j_id_t:AllUserTable_data")
 	WebElement usersTable;
-	public RegisteredUserPage(){
-		this.driver=SeleniumDriverManager.getManager().getDriver();
+
+	public RegisteredUserPage() {
+		this.driver = SeleniumDriverManager.getManager().getDriver();
 		PageFactory.initElements(driver, this);
 	}
-	public CreateRegisteredUserPage clickAddNewRegisteredUserlink()
-	{
+
+	public NewRegisteredUserPage clickAddNewRegisteredUserButton() {
 		createRegisteredUser.click();
-		return new CreateRegisteredUserPage();
+		return new NewRegisteredUserPage();
 	}
-	public Boolean addIsEnabled(){
+
+	public Boolean addIsEnabled() {
 		return createRegisteredUser.isEnabled();
 	}
-	public Boolean isNameinTable(String test){
+
+	public Boolean isNameinTable(String test) {
 		return usersTable.getText().contains(test);
 	}
 }

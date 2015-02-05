@@ -5,8 +5,10 @@ package test;
  */
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.navigation.NavigationPage;
-import utils.Randoms;
+
+import framework.pages.navigation.NavigationPage;
+import framework.pages.program.ProgramPage;
+import framework.utils.Randoms;
 /**
  * @title  SeeApplicants
  * @author Jose Cabrera
@@ -14,17 +16,17 @@ import utils.Randoms;
  * Test that verify if a Program is created correctly
  */
 public class VerifyCreateNewProgram {
+	public NavigationPage navigationPage = new NavigationPage();
+	public Randoms ran = new Randoms();
+	String name = ran.generateRandomString();
 
-	public NavigationPage navigationPage=new NavigationPage();
-	public Randoms ran=new Randoms();
-	String name=ran.generateRandomString();
-	
 	@Test
 	public void testVerifyNewProgramCreated() {
-		
+
+		ProgramPage Program = navigationPage.clickProgramsLink()
+				.clickAddNewProgramButton().createProgram(name, "test3","datos");
 		Assert.
-			assertTrue(navigationPage.SelectPrograms()
-			.clickAddNewProgramLink().create(name, "test3").isNameEnabled(name));
+		assertTrue(Program.isNameEnabled(name));
 	}
-	
+
 }

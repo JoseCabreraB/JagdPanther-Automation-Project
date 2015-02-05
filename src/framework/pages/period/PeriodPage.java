@@ -1,4 +1,5 @@
-package pages.period;
+package framework.pages.period;
+
 /**Created by Jose Cabrera
  * 1/24/15
  * 
@@ -6,7 +7,8 @@ package pages.period;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import webdriver.SeleniumDriverManager;
+import framework.webdriver.SeleniumDriverManager;
+
 /**
  * @title  ApplicantPage
  * @author Jose Cabrera
@@ -14,8 +16,9 @@ import webdriver.SeleniumDriverManager;
  */
 public class PeriodPage {
 	WebDriver driver;
+
 	public PeriodPage(){
-		this.driver=SeleniumDriverManager.getManager().getDriver();
+		this.driver = SeleniumDriverManager.getManager().getDriver();
 		PageFactory.initElements(driver, this);
 	}
 }

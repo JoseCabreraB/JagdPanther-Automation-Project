@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="9" passed="8">
+<testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="JagdPantherSuit" duration-ms="235260" started-at="2015-02-01T14:52:24Z" finished-at="2015-02-01T14:56:19Z">
+  <suite name="JagdPantherSuit" duration-ms="18175" started-at="2015-02-04T21:21:41Z" finished-at="2015-02-04T21:22:00Z">
     <groups>
     </groups>
-    <test name="Acceptance" duration-ms="235260" started-at="2015-02-01T14:52:24Z" finished-at="2015-02-01T14:56:19Z">
+    <test name="Acceptance" duration-ms="18175" started-at="2015-02-04T21:21:41Z" finished-at="2015-02-04T21:22:00Z">
       <class name="test.VerifyCreateNewRegisteredUser">
-        <test-method status="FAIL" signature="testVerifyNewRegisteredUserCreated(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewRegisteredUser@45d84a20]" name="testVerifyNewRegisteredUserCreated" duration-ms="55082" started-at="2015-02-01T10:54:06Z" data-provider="Users" finished-at="2015-02-01T10:55:02Z">
+        <test-method status="PASS" signature="testVerifyNewRegisteredUserCreated(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewRegisteredUser@6f15d60e]" name="testVerifyNewRegisteredUserCreated" duration-ms="2283" started-at="2015-02-04T17:21:50Z" data-provider="Users" finished-at="2015-02-04T17:21:52Z">
           <params>
             <param index="0">
               <value>
@@ -30,80 +30,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"j_id_t:AllUserTable_data"}
-Command duration or timeout: 30.56 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'JOS', ip: '192.168.217.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2ba657a2-af11-40ea-890c-ffaa9a564eb0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"j_id_t:AllUserTable_data"}
-Command duration or timeout: 30.56 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'JOS', ip: '192.168.217.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2ba657a2-af11-40ea-890c-ffaa9a564eb0
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy7.getText(Unknown Source)
-	at pages.RegisteredUser.RegisteredUserPage.isNameinTable(RegisteredUserPage.java:36)
-	at test.VerifyCreateNewRegisteredUser.testVerifyNewRegisteredUserCreated(VerifyCreateNewRegisteredUser.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"j_id_t:AllUserTable_data"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
-System info: host: 'JOS', ip: '192.168.217.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/JOSECA~1/AppData/Local/Temp/anonymous8087294419523177741webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:26)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/JOSECA~1/AppData/Local/Temp/anonymous8087294419523177741webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:548:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyNewRegisteredUserCreated -->
-        <test-method status="PASS" signature="testVerifyNewRegisteredUserCreated(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewRegisteredUser@45d84a20]" name="testVerifyNewRegisteredUserCreated" duration-ms="28049" started-at="2015-02-01T10:55:02Z" data-provider="Users" finished-at="2015-02-01T10:55:30Z">
+        <test-method status="PASS" signature="testVerifyNewRegisteredUserCreated(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewRegisteredUser@6f15d60e]" name="testVerifyNewRegisteredUserCreated" duration-ms="2580" started-at="2015-02-04T17:21:52Z" data-provider="Users" finished-at="2015-02-04T17:21:55Z">
           <params>
             <param index="0">
               <value>
@@ -129,7 +59,7 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyNewRegisteredUserCreated -->
-        <test-method status="PASS" signature="testVerifyNewRegisteredUserCreated(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewRegisteredUser@45d84a20]" name="testVerifyNewRegisteredUserCreated" duration-ms="30173" started-at="2015-02-01T10:55:30Z" data-provider="Users" finished-at="2015-02-01T10:56:00Z">
+        <test-method status="PASS" signature="testVerifyNewRegisteredUserCreated(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewRegisteredUser@6f15d60e]" name="testVerifyNewRegisteredUserCreated" duration-ms="2849" started-at="2015-02-04T17:21:55Z" data-provider="Users" finished-at="2015-02-04T17:21:58Z">
           <params>
             <param index="0">
               <value>
@@ -157,7 +87,7 @@ Driver info: driver.version: unknown
         </test-method> <!-- testVerifyNewRegisteredUserCreated -->
       </class> <!-- test.VerifyCreateNewRegisteredUser -->
       <class name="test.VerifyCreateNewStage">
-        <test-method status="PASS" signature="testVerifyNewStageCreated(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewStage@4d0d9fe7]" name="testVerifyNewStageCreated" duration-ms="20198" started-at="2015-02-01T10:52:26Z" data-provider="Stages" finished-at="2015-02-01T10:52:47Z">
+        <test-method status="PASS" signature="testVerifyNewStageCreated(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewStage@446a1e84]" name="testVerifyNewStageCreated" duration-ms="2072" started-at="2015-02-04T17:21:42Z" data-provider="Stages" finished-at="2015-02-04T17:21:44Z">
           <params>
             <param index="0">
               <value>
@@ -178,7 +108,7 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyNewStageCreated -->
-        <test-method status="PASS" signature="testVerifyNewStageCreated(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewStage@4d0d9fe7]" name="testVerifyNewStageCreated" duration-ms="24642" started-at="2015-02-01T10:52:47Z" data-provider="Stages" finished-at="2015-02-01T10:53:11Z">
+        <test-method status="PASS" signature="testVerifyNewStageCreated(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewStage@446a1e84]" name="testVerifyNewStageCreated" duration-ms="1674" started-at="2015-02-04T17:21:44Z" data-provider="Stages" finished-at="2015-02-04T17:21:46Z">
           <params>
             <param index="0">
               <value>
@@ -199,7 +129,7 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyNewStageCreated -->
-        <test-method status="PASS" signature="testVerifyNewStageCreated(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewStage@4d0d9fe7]" name="testVerifyNewStageCreated" duration-ms="24103" started-at="2015-02-01T10:53:11Z" data-provider="Stages" finished-at="2015-02-01T10:53:35Z">
+        <test-method status="PASS" signature="testVerifyNewStageCreated(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.VerifyCreateNewStage@446a1e84]" name="testVerifyNewStageCreated" duration-ms="1529" started-at="2015-02-04T17:21:46Z" data-provider="Stages" finished-at="2015-02-04T17:21:47Z">
           <params>
             <param index="0">
               <value>
@@ -222,29 +152,29 @@ Driver info: driver.version: unknown
         </test-method> <!-- testVerifyNewStageCreated -->
       </class> <!-- test.VerifyCreateNewStage -->
       <class name="test.VerifyCreateNewProgram">
-        <test-method status="PASS" signature="testVerifyNewProgramCreated()[pri:0, instance:test.VerifyCreateNewProgram@52f27fbd]" name="testVerifyNewProgramCreated" duration-ms="31104" started-at="2015-02-01T10:53:35Z" finished-at="2015-02-01T10:54:06Z">
+        <test-method status="PASS" signature="testVerifyNewProgramCreated()[pri:0, instance:test.VerifyCreateNewProgram@1be2019a]" name="testVerifyNewProgramCreated" duration-ms="2368" started-at="2015-02-04T17:21:47Z" finished-at="2015-02-04T17:21:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyNewProgramCreated -->
       </class> <!-- test.VerifyCreateNewProgram -->
       <class name="test.SeeApplicants">
-        <test-method status="PASS" signature="verifyApplicant()[pri:0, instance:test.SeeApplicants@c430e6c]" name="verifyApplicant" duration-ms="12723" started-at="2015-02-01T10:56:07Z" finished-at="2015-02-01T10:56:19Z">
+        <test-method status="PASS" signature="verifyApplicant()[pri:0, instance:test.SeeApplicants@4f0f2942]" name="verifyApplicant" duration-ms="1415" started-at="2015-02-04T17:21:58Z" finished-at="2015-02-04T17:22:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyApplicant -->
       </class> <!-- test.SeeApplicants -->
       <class name="test.SeeRegisteredUsers">
-        <test-method status="PASS" signature="SeeUsers()[pri:0, instance:test.SeeRegisteredUsers@4c163e3]" name="SeeUsers" duration-ms="6907" started-at="2015-02-01T10:56:00Z" finished-at="2015-02-01T10:56:07Z">
+        <test-method status="PASS" signature="SeeUsers()[pri:0, instance:test.SeeRegisteredUsers@29d80d2b]" name="SeeUsers" duration-ms="629" started-at="2015-02-04T17:21:58Z" finished-at="2015-02-04T17:21:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SeeUsers -->
       </class> <!-- test.SeeRegisteredUsers -->
       <class name="test.JagdPantherSuite">
-        <test-method status="PASS" signature="init()[pri:0, instance:test.JagdPantherSuite@2a693f59]" name="init" is-config="true" duration-ms="24302" started-at="2015-02-01T10:52:00Z" finished-at="2015-02-01T10:52:24Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.JagdPantherSuite@34bde49d]" name="init" is-config="true" duration-ms="2095" started-at="2015-02-04T17:21:39Z" finished-at="2015-02-04T17:21:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:test.JagdPantherSuite@2a693f59]" name="quit" is-config="true" duration-ms="45629" started-at="2015-02-01T10:56:20Z" finished-at="2015-02-01T10:57:05Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:test.JagdPantherSuite@34bde49d]" name="quit" is-config="true" duration-ms="1352" started-at="2015-02-04T17:22:00Z" finished-at="2015-02-04T17:22:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

@@ -1,4 +1,5 @@
-package pages.stage;
+package framework.pages.stage;
+
 /**Created by Jose Cabrera
  * 1/24/15
  * 
@@ -8,7 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import webdriver.SeleniumDriverManager;
+import framework.webdriver.SeleniumDriverManager;
+
 /**
  * @title  StagePage
  * @author Jose Cabrera
@@ -16,22 +18,24 @@ import webdriver.SeleniumDriverManager;
  */
 public class StagePage {
 	WebDriver driver;
-	@FindBy(id="j_id_t:j_id_10")
+
+	@FindBy(id = "j_id_t:j_id_10")
 	WebElement createStage;
-	@FindBy(id="j_id_t:stages_data")
+
+	@FindBy(id = "j_id_t:stages_data")
 	WebElement tableStage;
-	public StagePage(){
-		driver=SeleniumDriverManager.getManager().getDriver();
+
+	public StagePage() {
+		driver = SeleniumDriverManager.getManager().getDriver();
 		PageFactory.initElements(driver, this);
 	}
-	public CreateStagePage clickAddNewStagelink()
-	{
+
+	public NewStagePage clickAddNewStageButton() {
 		createStage.click();
-		return new CreateStagePage();
+		return new NewStagePage();
 	}
 	
-	public Boolean isNameinTable(String test){
+	public Boolean isNameinTable(String test) {
 		return test.contains(test);
 	}
-	
 }
