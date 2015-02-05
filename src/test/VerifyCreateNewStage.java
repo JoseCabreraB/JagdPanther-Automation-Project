@@ -24,7 +24,11 @@ public class VerifyCreateNewStage {
 	public NavigationPage navigationPage = new NavigationPage();
 	
 	@DataProvider(name = "Stages")
-	
+	/***
+	 * 
+	 * @return Object[][] that contain information of stages
+	 * @throws IOException if a excel file can not read
+	 */
 	public Object[][] createStage() throws IOException {
 		ReadExcel read = new ReadExcel();
 		Object[][] data = read.readExcel("C:\\Users\\Jose Cabrera\\workspace\\jagdpanther\\src\\utils",

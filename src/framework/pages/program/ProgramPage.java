@@ -18,12 +18,14 @@ import framework.webdriver.SeleniumDriverManager;
  * @description Is the page that contains information about programs in a table
  */
 public class ProgramPage {
-
+	//declare the instance of Selenium Webdriver
 	WebDriver driver;
-
+	
+	//The locator of button that is used for go to the Add a New Program form
 	@FindBy(id = "j_id_y:j_id_1a")
 	WebElement addNewProgramButton;
 
+	//The locator of ProgramsPage Form
 	@FindBy(id = "j_id_t:nameInput_display")
 	WebElement nameProgram;
 
@@ -38,8 +40,7 @@ public class ProgramPage {
 		return new NewProgramPage(driver);
 	}
 
-	public Boolean isNameEnabled(String test){
+	public Boolean isNameEnabled(){
 		return nameProgram.isDisplayed();
 	}
-
 }

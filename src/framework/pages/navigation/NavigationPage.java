@@ -22,21 +22,26 @@ import framework.webdriver.SeleniumDriverManager;
  * @description Is the navigation bar that have the links to all pages of JagdPanther
  */
 public class NavigationPage {
-
+	//declare the instance of Selenium Webdriver
 	WebDriver driver;
-
+	
+	//The locator of link that is used for go to ProgramsPage
 	@FindBy(linkText = "Programas")
 	WebElement programsLink;
-
+	
+	//The locator of link that is used for go to PeriodsPage
 	@FindBy(linkText = "Periodos")
 	WebElement periodsLink;
-
+	
+	//The locator of link that is used for go to ApplicantsPage
 	@FindBy(linkText = "Postulantes")
 	WebElement applicantsLink;
 
+	//The locator of link that is used for go to StagePage
 	@FindBy(linkText = "Etapas")
 	WebElement stagesLink;
-
+	
+	//The locator of link that is used for go to RegisteredUsersPage
 	@FindBy(linkText = "Usuarios de Sistema Registrados")
 	WebElement registeredUsersLink;
 
@@ -69,5 +74,4 @@ public class NavigationPage {
 		registeredUsersLink.click();
 		return new RegisteredUserPage(); 
 	}
-
 }

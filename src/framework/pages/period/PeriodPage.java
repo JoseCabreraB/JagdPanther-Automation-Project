@@ -15,6 +15,7 @@ import framework.webdriver.SeleniumDriverManager;
  * @description Is the page that contains information about applicants in a table 	
  */
 public class PeriodPage {
+	//declare the instance of Selenium Webdriver
 	WebDriver driver;
 
 	public PeriodPage(){

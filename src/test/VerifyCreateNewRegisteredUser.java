@@ -23,6 +23,10 @@ public class VerifyCreateNewRegisteredUser {
 	public NavigationPage navigationPage = new NavigationPage();
 
 	@DataProvider(name = "Users")
+	/***
+	 * 
+	 * @return Object[][] that contain information of Registered Users
+	 **/
 	public Object[][] dataUsers(){
 		Object[][] Usersarray = {{"006","23","21","user1@user.com"},
 				{"004","24","21","user2@user.com"},

@@ -35,7 +35,7 @@ public class NewStagePage extends NewFormStageorProgram {
 		return new StagePage();
 	}
 
-	public StagePage create(String name, String title,String description) {
+	public StagePage create(String name, String title, String description) {
 		setName(name);
 		setTitle(title);
 		setDescription(description);

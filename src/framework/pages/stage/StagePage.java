@@ -17,11 +17,14 @@ import framework.webdriver.SeleniumDriverManager;
  * @description Is the page that contains information about Stages in a table
  */
 public class StagePage {
+	//declare the instance of Selenium Webdriver
 	WebDriver driver;
-
+	
+	//The locator of button that is used for go to the Add a New Program form
 	@FindBy(id = "j_id_t:j_id_10")
 	WebElement createStage;
 
+	//The locator of StagePage Form
 	@FindBy(id = "j_id_t:stages_data")
 	WebElement tableStage;
 

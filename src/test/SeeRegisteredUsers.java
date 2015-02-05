@@ -1,16 +1,12 @@
 package test;
-
 /**Created by Jose Cabrera
  * 1/26/15
  * 
  */
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import framework.pages.navigation.NavigationPage;
-import framework.pages.registereduser.RegisteredUserPage;
-import framework.utils.Randoms;
-
+import pages.navigation.NavigationPage;
+import utils.Randoms;
 /**
  * @title  SeeApplicants
  * @author Jose Cabrera
@@ -19,14 +15,13 @@ import framework.utils.Randoms;
  */
 public class SeeRegisteredUsers {
 
-	public NavigationPage navigationPage = new NavigationPage();
-	public Randoms ran = new Randoms();
-	String name = ran.generateRandomString();
+	public NavigationPage navigationPage=new NavigationPage();
+	public Randoms ran=new Randoms();
+	String name=ran.generateRandomString();
 	@Test
 	public void SeeUsers() {
-		RegisteredUserPage registeredUser = navigationPage.clickRegisteredUsersLink();
 		Assert.
-		assertTrue(registeredUser.addIsEnabled());
+			assertTrue(navigationPage.SelectRegisteredUsers().addIsEnabled());
 	}
-
+	
 }

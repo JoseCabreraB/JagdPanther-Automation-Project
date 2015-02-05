@@ -17,11 +17,14 @@ import framework.webdriver.SeleniumDriverManager;
  * @description Is the page that contains information about Registered Users in a table
  */
 public class RegisteredUserPage {
+	//declare the instance of Selenium Webdriver
 	WebDriver driver;
-
+	
+	//The locator of button used for Add A New Registered User
 	@FindBy(id = "j_id_t:j_id_16")
-	WebElement createRegisteredUser;
-
+	WebElement createRegisteredUserButton;
+	
+	//The locator of Users Form
 	@FindBy(id = "j_id_t:AllUserTable_data")
 	WebElement usersTable;
 
@@ -31,15 +34,15 @@ public class RegisteredUserPage {
 	}
 
 	public NewRegisteredUserPage clickAddNewRegisteredUserButton() {
-		createRegisteredUser.click();
+		createRegisteredUserButton.click();
 		return new NewRegisteredUserPage();
 	}
 
 	public Boolean addIsEnabled() {
-		return createRegisteredUser.isEnabled();
+		return createRegisteredUserButton.isEnabled();
 	}
 
-	public Boolean isNameinTable(String test) {
-		return usersTable.getText().contains(test);
+	public Boolean isNameinTable(String name) {
+		return usersTable.getText().contains(name);
 	}
 }

@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import framework.pages.navigation.NavigationPage;
 import framework.webdriver.SeleniumDriverManager;
@@ -19,31 +18,34 @@ import framework.webdriver.SeleniumDriverManager;
  * @description Is the page that is used for login in the application
  */
 public class LoginPage {
+	//declare the instance of Selenium Webdriver
 	protected WebDriver driver;
-	protected WebDriverWait wait; 
 
+	//The locator used for find an inputUserName TextBox
 	@FindBy(id = "j_id_i:userName")
 	WebElement txtUser;
-
+	
+	//The locator used for find an inputpassword TextBox
 	@FindBy(id = "j_id_i:password")
 	WebElement txtPass;
-
+	
+	//The locator of button used for log on in the application
 	@FindBy(id = "j_id_i:j_id_q")
 	WebElement loginButton;
-
+	
+	//The locator used for close session in the application
 	@FindBy(id = "j_id_d")
-	WebElement closeSession;
+	WebElement closeSessionLink;
 
 	public LoginPage() {
 		driver = SeleniumDriverManager.getManager().getDriver();
-		wait = SeleniumDriverManager.getManager().getWait();
 		PageFactory.initElements(driver, this);
 		driver.get("http://localhost:8080/");
 	}
 
-	public LoginPage login() {
+	public NavigationPage login() {
 		loginButton.click();
-		return this;
+		return new NavigationPage();
 	}
 
 	public void setUser(String user){
@@ -57,14 +59,15 @@ public class LoginPage {
 	public NavigationPage login(String username, String password){
 		setUser(username);
 		setPass(password);
-		return new NavigationPage();
+		return login();
 	}
 	
 	public Boolean getResult(){
-		return closeSession.isEnabled();
+		return closeSessionLink.isEnabled();
 	}
 
 	public void quit() {
+		closeSessionLink.click();
 		driver.quit();
 	}
 }

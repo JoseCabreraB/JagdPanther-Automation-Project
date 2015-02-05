@@ -10,7 +10,7 @@ import framework.pages.LoginPage;
 /**
  * @title  LoginLikeAnAdministrator
  * @author Jose Cabrera
- * @description Is the page that contains information about Test that verify the login successfully
+ * @description Is the page that contains information about Test that verify the login successfully 
  */
 public class LoginLikeAnAdministrator {
 
@@ -22,6 +22,4 @@ public class LoginLikeAnAdministrator {
 		Assert.assertTrue(loginPage.getResult());
 		loginPage.quit();
 	}
-
-
 }

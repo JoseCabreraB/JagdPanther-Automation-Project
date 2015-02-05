@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import framework.pages.NewFormStageorProgram;
 
@@ -20,9 +19,7 @@ import framework.webdriver.SeleniumDriverManager;
  * @description Is the page that is used for create Programs
  */
 public class NewProgramPage extends NewFormStageorProgram {
-	public WebDriver driver;
-	public WebDriverWait wait; 
-
+	//The locator of button that is used for create a new Program
 	@FindBy(id = "form:j_id_18")
 	WebElement createbutton;
 

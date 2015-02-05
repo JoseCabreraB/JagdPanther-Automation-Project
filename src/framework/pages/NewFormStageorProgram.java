@@ -13,15 +13,17 @@ import org.openqa.selenium.support.FindBy;
  * @description Is the page that is used for create Registered Users
  */
 public abstract class NewFormStageorProgram {
+	//The locator used for find an inputName TextBox
 	@FindBy(id = "form:inputName")
 	protected WebElement txtName;
-
+	
+	//The locator used for find an inputTitle TextBox
 	@FindBy(id = "form:inputTitle")
 	protected WebElement txtTitle;
-
+	
+	//The locator used for find an inputDescription TextBox
 	@FindBy(id = "form:inputDescription")
 	protected WebElement txtDescription;
-
 
 	public void setName(String names){
 		txtName.sendKeys(names);

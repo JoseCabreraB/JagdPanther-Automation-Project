@@ -9,9 +9,19 @@
           <include name="init"/>
         </methods>
       </class> <!-- test.JagdPantherSuite -->
+      <class name="test.VerifyCreateNewRegisteredUser">
+        <methods>
+          <include name="testVerifyNewRegisteredUserCreated" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- test.VerifyCreateNewRegisteredUser -->
+      <class name="test.VerifyCreateNewProgram">
+        <methods>
+          <include name="testVerifyNewProgramCreated"/>
+        </methods>
+      </class> <!-- test.VerifyCreateNewProgram -->
       <class name="test.VerifyCreateNewStage">
         <methods>
-          <include name="testVerifyNewStageCreated" invocation-numbers="2"/>
+          <include name="testVerifyNewStageCreated" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- test.VerifyCreateNewStage -->
     </classes>

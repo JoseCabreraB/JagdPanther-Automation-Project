@@ -13,8 +13,15 @@ import java.sql.Statement;
  * @title  DataConnection
  * @author Jose Cabrera
  * @description Is the page that contains information about the database connection
- */
+ * */
 public class DataConnection {
+	/***
+	 ** @param Connection conex : this is the connection by default
+	 *  @param Statement statement : Is the instance that permit execute querys 
+	 *  @param String dirDB : The address where is located database
+	 *  @param String userDB : The user of MySql
+	 *  @param String passDB : The password of user of MySql 
+	 */
 	private static Connection conex = null;
 	private static Statement statement;
 	private static String dirDB = "jdbc:mysql://localhost/jagdpanther";   

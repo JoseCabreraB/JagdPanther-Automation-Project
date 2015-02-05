@@ -27,7 +27,7 @@ public class VerifyCreateNewProgram {
 
 		ProgramPage Program = navigationPage.clickProgramsLink()
 				.clickAddNewProgramButton().createProgram(name, "test3","datos");
-		Assert.assertTrue(Program.isNameEnabled(name));
+		Assert.assertTrue(Program.isNameEnabled());
 	}
 
 }

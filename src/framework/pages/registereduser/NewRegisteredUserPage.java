@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import framework.pages.registereduser.NewRegisteredUserPage;
 import framework.pages.registereduser.RegisteredUserPage;
@@ -20,19 +19,22 @@ import framework.webdriver.SeleniumDriverManager;
  * @description Is the page that is used for create Registered Users
  */
 public class NewRegisteredUserPage  {
-
-	public WebDriver driver;
-	public WebDriverWait wait; 
-
+	//declare the instance of Selenium Webdriver
+	WebDriver driver;
+	
+	//The locator used for find an inputCI TextBox
 	@FindBy(id = "j_id_t:inputCi")
 	WebElement txtCI;
-
+	
+	//The locator used for find an inputName TextBox
 	@FindBy(id = "j_id_t:inputName")
 	WebElement txtName;
-
+	
+	//The locator used for find an inputLastName TextBox
 	@FindBy(id = "j_id_t:inputLastName")
 	WebElement txtLastName;
 
+	//The locator used for find an inputEmail TextBox
 	@FindBy(id = "j_id_t:inputEmail")
 	WebElement txtEmail;
 
