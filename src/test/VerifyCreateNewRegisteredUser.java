@@ -1,4 +1,5 @@
 package test;
+
 /**
  * Created by Jose Cabrera
  * 1/28/15
@@ -33,7 +34,6 @@ public class VerifyCreateNewRegisteredUser {
 		RegisteredUserPage users = navigationPage.clickRegisteredUsersLink()
 				.clickAddNewRegisteredUserButton()
 				.create(ci,name,lastname,email);
-		Assert.
-		assertTrue(users.isNameinTable(name));
+		Assert.assertTrue(users.isNameinTable(name));
 	}
 }

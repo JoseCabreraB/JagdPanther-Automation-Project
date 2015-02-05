@@ -37,7 +37,6 @@ public class VerifyCreateNewStage {
 	public void testVerifyNewStageCreated(String name, String Tittle, String Description) {
 		StagePage stage = navigationPage.clickStagesLink()
 				.clickAddNewStageButton().create(name, Tittle, Description);
-		Assert.
-		assertTrue(stage.isNameinTable(name));
+		Assert.assertTrue(stage.isNameinTable(name));
 	}
 }
